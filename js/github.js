@@ -59,7 +59,7 @@ function applyDataToDOM(data) {
 
   if (Array.isArray(data.repos)) {
     data.repos.forEach(repo => {
-      const card = document.querySelector(`[data-repo="${repo.name}"]`);
+      const card = document.querySelector(`[data-repo="${repo.name}" i]`);
       if (card) {
         const starsEl = card.querySelector('.repo-stars');
         const forksEl = card.querySelector('.repo-forks');
