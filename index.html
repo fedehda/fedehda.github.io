@@ -105,7 +105,7 @@
           </div>
 
           <p class="hero-description">
-            Ingeniero de software entusiasta desde Argentina. Creo soluciones completas: desde aplicaciones web escalables con arquitecturas modernas hasta programación de sistemas a bajo nivel (C++, streaming de video y firmware para microcontroladores).
+            Ingeniero de software entusiasta desde Argentina. Creo soluciones completas: desde aplicaciones web escalables y apps móviles nativas para Android hasta programación de sistemas a bajo nivel (C++, streaming de video y firmware para microcontroladores).
           </p>
 
           <div class="hero-actions">
@@ -139,12 +139,12 @@
 
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-value accent" id="hero-repo-count">+10</span>
+              <span class="stat-value accent" id="hero-repo-count">+11</span>
               <span class="stat-label">Repositorios Públicos</span>
             </div>
             <div class="stat-item">
-              <span class="stat-value">Full-Stack</span>
-              <span class="stat-label">Next.js • TS • React</span>
+              <span class="stat-value">Full-Stack & Mobile</span>
+              <span class="stat-label">Next.js • Android • TS</span>
             </div>
             <div class="stat-item">
               <span class="stat-value">Sistemas</span>
@@ -186,6 +186,7 @@
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all">Todos</button>
           <button class="filter-btn" data-filter="fullstack">Full-Stack & Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile & Android</button>
           <button class="filter-btn" data-filter="hardware">Hardware & IoT</button>
           <button class="filter-btn" data-filter="systems">Sistemas & C++</button>
         </div>
@@ -250,7 +251,7 @@
           </article>
 
           <!-- Fudo Saldos & Arqueo PWA -->
-          <article class="project-card featured" data-category="fullstack" data-repo="Fudo-balances-pwa">
+          <article class="project-card featured" data-category="fullstack mobile" data-repo="Fudo-balances-pwa">
             <div class="card-top">
               <span class="badge-featured" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: #38bdf8;">📱 PWA & FULL-STACK</span>
               <span class="badge-category">Next.js 15 • PWA • TypeScript</span>
@@ -282,6 +283,51 @@
               </div>
               <div class="card-actions">
                 <a href="https://github.com/fedehda/Fudo-balances-pwa" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <span>Ver Código</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Presupuesto Mensual (Android Native) -->
+          <article class="project-card featured" data-category="mobile" data-repo="presupuestomensual">
+            <div class="card-top">
+              <span class="badge-featured" style="background: rgba(61, 220, 132, 0.15); border-color: rgba(61, 220, 132, 0.35); color: #3ddc84;">🤖 ANDROID & KOTLIN</span>
+              <span class="badge-category">Android Nativo • Jetpack Compose • MVVM</span>
+            </div>
+            <h3 class="card-title">
+              <a href="https://github.com/fedehda/presupuestomensual" target="_blank" rel="noopener noreferrer">Presupuesto Mensual App</a>
+            </h3>
+            <p class="card-desc">
+              Aplicación móvil nativa para Android de finanzas personales y gestión de presupuestos en tiempo real. Construida con arquitectura MVVM moderna, UI 100% declarativa en Jetpack Compose (Material You), persistencia reactiva en Firebase y autenticación biométrica.
+            </p>
+            <ul class="feature-list">
+              <li><span class="bullet">▹</span> <strong>Billeteras & Presupuestos:</strong> Gestión multibilletera, topes de presupuesto mensual, pagos planificados y control de ingresos/gastos recurrentes.</li>
+              <li><span class="bullet">▹</span> <strong>Tarjetas & Proyecciones:</strong> Seguimiento de cuotas pendientes, cálculo de amortizaciones y proyecciones de balance futuro.</li>
+              <li><span class="bullet">▹</span> <strong>Analítica Visual:</strong> Gráficos interactivos de tendencias, distribución por categorías (Pie Charts) y comparativas intermensuales.</li>
+              <li><span class="bullet">▹</span> <strong>Cloud & Seguridad Biométrica:</strong> Sincronización multi-dispositivo con Firebase Realtime Database, Google Sign-In y acceso seguro por huella/rostro (<kbd>BiometricPrompt</kbd>).</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Material 3</span>
+              <span class="tag">MVVM</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Biometrics</span>
+            </div>
+            <div class="card-footer">
+              <div class="repo-meta">
+                <span class="meta-item">⭐ <span class="repo-stars">0</span></span>
+                <span class="meta-item">🍴 <span class="repo-forks">0</span></span>
+                <span class="meta-item repo-date">Act: 2026</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/fedehda/presupuestomensual" target="_blank" rel="noopener noreferrer" class="link-btn">
                   <span>Ver Código</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -553,6 +599,29 @@
               <span class="skill-chip">Angular</span>
               <span class="skill-chip">HTML5 Semántico</span>
               <span class="skill-chip">CSS Grid / Flexbox</span>
+            </div>
+          </div>
+
+          <!-- Mobile & Android -->
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon-box" style="color: #3ddc84; background: rgba(61, 220, 132, 0.12); border-color: rgba(61, 220, 132, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Mobile & Android</h3>
+            </div>
+            <div class="skill-list">
+              <span class="skill-chip">Android Nativo</span>
+              <span class="skill-chip">Kotlin</span>
+              <span class="skill-chip">Jetpack Compose</span>
+              <span class="skill-chip">Material 3</span>
+              <span class="skill-chip">Arquitectura MVVM</span>
+              <span class="skill-chip">Firebase Realtime DB</span>
+              <span class="skill-chip">Biometrics Prompt</span>
+              <span class="skill-chip">WorkManager</span>
             </div>
           </div>
 
