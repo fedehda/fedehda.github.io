@@ -33,14 +33,35 @@ function initNavigation() {
 
   // Mobile drawer toggle
   mobileToggle?.addEventListener('click', () => {
-    navLinks?.classList.toggle('open');
+    const isOpen = navLinks?.classList.toggle('open');
+    mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
   // Close mobile drawer when clicking a link
   links.forEach(link => {
     link.addEventListener('click', () => {
       navLinks?.classList.remove('open');
+      mobileToggle?.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // Close mobile drawer on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks?.classList.contains('open')) {
+      navLinks.classList.remove('open');
+      mobileToggle?.setAttribute('aria-expanded', 'false');
+      mobileToggle?.focus();
+    }
+  });
+
+  // Close mobile drawer when clicking outside
+  document.addEventListener('click', (e) => {
+    if (navLinks?.classList.contains('open') &&
+        !navLinks.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      navLinks.classList.remove('open');
+      mobileToggle?.setAttribute('aria-expanded', 'false');
+    }
   });
 
   // Scrollspy: highlight active link on scroll
@@ -78,16 +99,20 @@ function initProjectFilters() {
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active button state
-      filterBtns.forEach(b => b.classList.remove('active'));
+      // Toggle active button state and aria-pressed
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
         const categories = (card.getAttribute('data-category') || '').split(' ');
         if (filter === 'all' || categories.includes(filter)) {
-          card.style.display = 'flex';
+          card.style.display = '';
           setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
