@@ -223,31 +223,50 @@
               </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; justify-content: space-between;">
-              <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 1.5rem;">
-                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Arquitectura & Producción</div>
-                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+            <div class="featured-hero-side">
+              <div class="hero-tech-box">
+                <div class="hero-box-title">Arquitectura & Producción</div>
+                <p class="hero-box-desc">
                   Plataforma SaaS multi-inquilino desplegada en producción en <strong>www.gastrobumeran.com.ar</strong> con sincronización POS en tiempo real, transacciones de doble partida y suscripciones con Mercado Pago.
                 </p>
+
+                <div class="hero-highlights-list">
+                  <div class="hero-highlight-item">
+                    <span class="highlight-icon" style="color: var(--accent-cyan);">⚡</span>
+                    <div>
+                      <strong>Sincronización POS & Webhooks</strong>
+                      <span>Ingesta idempotente de ventas y rollback ante anulaciones de caja.</span>
+                    </div>
+                  </div>
+                  <div class="hero-highlight-item">
+                    <span class="highlight-icon" style="color: var(--accent-violet-light);">🛡️</span>
+                    <div>
+                      <strong>Tarjeta Digital con DNI</strong>
+                      <span>Autenticación de comensal mediante OTP sin instalación de apps.</span>
+                    </div>
+                  </div>
+                  <div class="hero-highlight-item">
+                    <span class="highlight-icon" style="color: var(--accent-emerald);">📊</span>
+                    <div>
+                      <strong>Inteligencia RFM & Pasivo Real</strong>
+                      <span>Monitoreo contable del costo de premios para proteger márgenes.</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="card-footer" style="margin-top: auto;">
-                <div class="repo-meta">
-                  <span class="meta-item" style="color: var(--accent-emerald); font-weight: 600;">
-                    <span class="status-dot" style="position: static; display: inline-block; width: 8px; height: 8px; margin-right: 4px; box-shadow: 0 0 8px var(--accent-emerald);"></span>
-                    Producción Activa
-                  </span>
-                  <span class="meta-item" style="color: var(--text-muted); font-size: 0.8rem;">gastrobumeran.com.ar</span>
+              <div class="hero-cta-box">
+                <div class="hero-status-pill">
+                  <span class="status-dot"></span>
+                  <span>Producción Activa</span>
                 </div>
-                <div class="card-actions">
-                  <a href="https://www.gastrobumeran.com.ar" target="_blank" rel="noopener noreferrer" class="link-btn" style="background: rgba(6, 182, 212, 0.15); border-color: var(--accent-cyan); color: #fff;">
-                    <span>Visitar Sitio Web</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                      <line x1="7" y1="17" x2="17" y2="7"></line>
-                      <polyline points="7 7 17 7 17 17"></polyline>
-                    </svg>
-                  </a>
-                </div>
+                <a href="https://www.gastrobumeran.com.ar" target="_blank" rel="noopener noreferrer" class="link-btn" style="background: rgba(6, 182, 212, 0.15); border-color: var(--accent-cyan); color: #fff; padding: 0.5rem 1.15rem; font-size: 0.88rem;">
+                  <span>Visitar Sitio Web</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
               </div>
             </div>
           </article>
