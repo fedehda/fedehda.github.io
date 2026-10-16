@@ -175,7 +175,7 @@
     <section id="proyectos" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Portafolio de Código Abierto</span>
+          <span class="section-tag">Proyectos & Productos</span>
           <h2 class="section-title">Proyectos Destacados</h2>
           <p class="section-desc">
             Una selección de proyectos destacados que abarcan desde plataformas web y SaaS gastronómicos hasta aplicaciones nativas en Android y hardware embebido.
@@ -194,14 +194,14 @@
         <div class="projects-grid">
           
           <!-- GastroBumeran (Featured Hero) -->
-          <article class="project-card featured featured-hero" data-category="fullstack" data-repo="gastrobumeran">
+          <article class="project-card featured featured-hero" data-category="fullstack">
             <div>
               <div class="card-top">
                 <span class="badge-featured">⭐ PROYECTO PRINCIPAL</span>
-                <span class="badge-category">Full-Stack SaaS • TypeScript</span>
+                <span class="badge-category" style="color: var(--accent-emerald); font-weight: 600;">🟢 En Producción • SaaS</span>
               </div>
               <h3 class="card-title">
-                <a href="https://github.com/fedehda/gastrobumeran" target="_blank" rel="noopener noreferrer">GastroBumerán</a>
+                <a href="https://www.gastrobumeran.com.ar" target="_blank" rel="noopener noreferrer">GastroBumerán</a>
               </h3>
               <p class="card-desc">
                 Plataforma integral de fidelización gastronómica diseñada para la retención y recurrencia de comensales. Desarrollada para resolver desafíos reales del sector de restaurantes y cervecerías mediante un motor inteligente de recompensas.
@@ -210,36 +210,39 @@
                 <li><span class="bullet">▹</span> <strong>Motor Híbrido:</strong> Puntos por volumen de consumo + sellos por frecuencia con protección antifraude.</li>
                 <li><span class="bullet">▹</span> <strong>Modelo Anti-inflacionario:</strong> Caducidad dual FIFO (Rolling 90d + caducidad de lotes a 365d).</li>
                 <li><span class="bullet">▹</span> <strong>Wizard Universal CSV:</strong> Detección automática de delimitadores, normalizador de moneda/DNI y presets reutilizables (Fudo, Maxirest, Tango Restó).</li>
-                <li><span class="bullet">▹</span> <strong>Módulo de Cortesías:</strong> Detección y alertas en caja de cumpleaños y promociones exclusivas.</li>
+                <li><span class="bullet">▹</span> <strong>Portal de Clientes & Cortesías:</strong> Tarjeta digital con acceso vía DNI y validación de seguridad sin requerir descarga de apps.</li>
               </ul>
               <div class="tech-tags">
                 <span class="tag">TypeScript</span>
-                <span class="tag">Next.js</span>
+                <span class="tag">Next.js 15</span>
                 <span class="tag">React</span>
                 <span class="tag">Tailwind CSS</span>
-                <span class="tag">PostgreSQL / SQLite</span>
-                <span class="tag">CSV Engine</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Fudo API</span>
+                <span class="tag">Mercado Pago</span>
               </div>
             </div>
 
             <div style="display: flex; flex-direction: column; justify-content: space-between;">
               <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 1.5rem;">
-                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Arquitectura & Integraciones</div>
+                <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--accent-cyan); font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Arquitectura & Producción</div>
                 <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
-                  Diseñado con idempotencia en ventas externas, transacciones atómicas de doble partida para puntos y paneles de caja de alta agilidad.
+                  Plataforma SaaS multi-inquilino desplegada en producción en <strong>www.gastrobumeran.com.ar</strong> con sincronización POS en tiempo real, transacciones de doble partida y suscripciones con Mercado Pago.
                 </p>
               </div>
 
               <div class="card-footer" style="margin-top: auto;">
                 <div class="repo-meta">
-                  <span class="meta-item" title="Estrellas de GitHub">⭐ <span class="repo-stars">0</span></span>
-                  <span class="meta-item" title="Forks">🍴 <span class="repo-forks">0</span></span>
-                  <span class="meta-item repo-date">Act: 2026</span>
+                  <span class="meta-item" style="color: var(--accent-emerald); font-weight: 600;">
+                    <span class="status-dot" style="position: static; display: inline-block; width: 8px; height: 8px; margin-right: 4px; box-shadow: 0 0 8px var(--accent-emerald);"></span>
+                    Producción Activa
+                  </span>
+                  <span class="meta-item" style="color: var(--text-muted); font-size: 0.8rem;">gastrobumeran.com.ar</span>
                 </div>
                 <div class="card-actions">
-                  <a href="https://github.com/fedehda/gastrobumeran" target="_blank" rel="noopener noreferrer" class="link-btn">
-                    <span>Ver Código</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <a href="https://www.gastrobumeran.com.ar" target="_blank" rel="noopener noreferrer" class="link-btn" style="background: rgba(6, 182, 212, 0.15); border-color: var(--accent-cyan); color: #fff;">
+                    <span>Visitar Sitio Web</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                       <line x1="7" y1="17" x2="17" y2="7"></line>
                       <polyline points="7 7 17 7 17 17"></polyline>
                     </svg>
